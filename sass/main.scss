@@ -75,3 +75,45 @@ body{
         @include icon;
     }
 }
+
+/*/ RESTAURANTS */
+
+aside {
+    background-color: $gray;
+}
+
+.card{
+    
+    background-color: #fff;
+    max-width: 325px;
+    border-radius: 20px;
+    &__img{
+        
+        img{
+            width: 325px;
+            max-height: 200px;
+            border-radius: 20px 20px 0 0;
+        }
+    }
+}
+
+
+
+
+
+/*/ FOOTER */
+
+footer {
+    background-color: $dark_gray;
+
+    li{
+        list-style: none;
+        color:#fff;
+    }
+
+}
+.logo{
+    &__img{
+        width: 150px;
+    }
+}
