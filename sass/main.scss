@@ -26,8 +26,11 @@ body{
 /*/ LOGO */
 
 .logo{
-    border-bottom: 1px solid black;
-    font-family: $secondary_font;
+    border-bottom: 1px solid $gray;
+}
+
+.location{
+    background-color: #EAEAEA;
 }
 
 /*/ EXPLORER */
@@ -35,6 +38,8 @@ body{
 
 .explorer{
     background-color: $gray;
+    padding-top: 20px;
+    padding-bottom: 25px;
 
     h1{
         font-family: $primary_font;
@@ -42,7 +47,9 @@ body{
 
     &__btn{
         border-radius: 40px;
+        border: none;
         padding: 10px 15px ;
+        background: linear-gradient($secondadry_color , $primary_color);
         background-color: $primary_color ;
         color: #fff;
         
@@ -54,8 +61,20 @@ body{
 .tips{
     background-color: $gray;
     border: 1px solid $gray;
-    border-radius: 15px;
+    border-radius: 25px;
     font-family: $primary_font;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+	            15px 15px 15px rgba(0,0,0,0.1);
+    .badge{
+        border-radius: 50%;
+        padding: 2px 7px;
+        background-color: $primary_color;
+        color: #fff;
+        margin-right: auto;
+        display: table;
+        margin-left: -0.9%;
+        font-size: 15px;
+     }            
 
     .tel{
        @include icon;
@@ -74,6 +93,8 @@ body{
 
 aside {
     background-color: $gray;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .container{
@@ -92,6 +113,17 @@ aside {
             max-height: 200px;
             border-radius: 20px 20px 0 0;
         }
+    }
+    &__badge{
+        padding: 5px 10px;
+        background-color: #99E2D0;
+        color: #008E6D;
+        border-radius: 3px;
+        margin-left: 230px;
+        margin-top: 10px;
+        z-index: 1;
+        position: absolute;
+        font-family: $primary_font;
     }
 }
 
@@ -129,3 +161,5 @@ footer {
         padding-top: 15px;
     }
 }
+
+

@@ -9,20 +9,27 @@ body {
 
 /*/ LOGO */
 .logo {
-  border-bottom: 1px solid black;
-  font-family: "Shrikhand", cursive;
+  border-bottom: 1px solid #F6F6F6;
+}
+
+.location {
+  background-color: #EAEAEA;
 }
 
 /*/ EXPLORER */
 .explorer {
   background-color: #F6F6F6;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 .explorer h1 {
   font-family: "Roboto", sans-serif;
 }
 .explorer__btn {
   border-radius: 40px;
+  border: none;
   padding: 10px 15px;
+  background: linear-gradient(#FF79DA, #9356DC);
   background-color: #9356DC;
   color: #fff;
 }
@@ -31,8 +38,19 @@ body {
 .tips {
   background-color: #F6F6F6;
   border: 1px solid #F6F6F6;
-  border-radius: 15px;
+  border-radius: 25px;
   font-family: "Roboto", sans-serif;
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.1);
+}
+.tips .badge {
+  border-radius: 50%;
+  padding: 2px 7px;
+  background-color: #9356DC;
+  color: #fff;
+  margin-right: auto;
+  display: table;
+  margin-left: -0.9%;
+  font-size: 15px;
 }
 .tips .tel {
   color: #7c7979;
@@ -50,6 +68,8 @@ body {
 /*/ RESTAURANTS */
 aside {
   background-color: #F6F6F6;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .container {
@@ -65,6 +85,17 @@ aside {
   width: 325px;
   max-height: 200px;
   border-radius: 20px 20px 0 0;
+}
+.card__badge {
+  padding: 5px 10px;
+  background-color: #99E2D0;
+  color: #008E6D;
+  border-radius: 3px;
+  margin-left: 230px;
+  margin-top: 10px;
+  z-index: 1;
+  position: absolute;
+  font-family: "Roboto", sans-serif;
 }
 
 /*/ FOOTER */
