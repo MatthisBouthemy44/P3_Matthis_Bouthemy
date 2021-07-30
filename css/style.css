@@ -11,9 +11,18 @@ body {
 .logo {
   border-bottom: 1px solid #F6F6F6;
 }
-
-.location {
+.logo .location {
   background-color: #EAEAEA;
+  height: 50px;
+}
+.logo .location p {
+  display: inline-flex;
+  font-family: "Roboto", sans-serif;
+  color: #838383;
+  font-size: 15px;
+}
+.logo .location i {
+  margin-right: 15px;
 }
 
 /*/ EXPLORER */
@@ -71,6 +80,13 @@ aside {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+aside h2 {
+  text-align: start;
+  margin-left: 40px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  font-family: "Roboto", sans-serif;
+}
 
 .container {
   display: inline-block;
@@ -80,6 +96,7 @@ aside {
   background-color: #fff;
   max-width: 325px;
   border-radius: 20px;
+  height: 270px;
 }
 .card__img img {
   width: 325px;
@@ -96,6 +113,26 @@ aside {
   z-index: 1;
   position: absolute;
   font-family: "Roboto", sans-serif;
+}
+.card__body {
+  text-align: start;
+  margin-left: 10px;
+}
+.card__body h3 {
+  margin: 10px 0px -5px 0px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+.card__body i {
+  margin-left: 270px;
+  font-size: 22px;
+}
+.card__body p {
+  margin-top: -15px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
 }
 
 /*/ FOOTER */

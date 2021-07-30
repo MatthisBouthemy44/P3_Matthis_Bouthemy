@@ -1,16 +1,4 @@
 
-//     .card{
-//         &__img{
-//             width: 100%;
-//             &--color_red{
-//                 color: $primary_color;
-//                 /* @include specs */;
-//             }
-//         }
-    
-//     }
-// } 
-
 @import "variables.scss" ;
 @import "mixin.scss";
 
@@ -27,11 +15,24 @@ body{
 
 .logo{
     border-bottom: 1px solid $gray;
+
+    .location{
+        background-color: #EAEAEA;
+        height: 50px;
+
+        p{
+            display: inline-flex;
+            font-family: $primary_font;
+            color: #838383 ;
+            font-size: 15px;
+        }
+
+        i{
+            margin-right: 15px;
+        }
+    }
 }
 
-.location{
-    background-color: #EAEAEA;
-}
 
 /*/ EXPLORER */
 
@@ -95,6 +96,14 @@ aside {
     background-color: $gray;
     padding-top: 15px;
     padding-bottom: 15px;
+
+    h2{
+        text-align: start;
+        margin-left: 40px;
+        margin-bottom: 5px;
+        margin-top: 15px;
+        font-family:$primary_font ;
+    }
 }
 
 .container{
@@ -106,6 +115,8 @@ aside {
     background-color: #fff;
     max-width: 325px;
     border-radius: 20px;
+    height: 270px;
+
     &__img{
         
         img{
@@ -124,6 +135,29 @@ aside {
         z-index: 1;
         position: absolute;
         font-family: $primary_font;
+    }
+    &__body{
+        text-align: start;
+        margin-left: 10px;
+
+        h3{
+            margin: 10px 0px -5px 0px;
+            font-family: $primary_font;
+            font-size: 15px;
+        }
+
+        i{
+            margin-left: 270px;
+            font-size: 22px;
+        }
+
+        p{
+            margin-top: -15px;
+            margin-bottom: 0px;
+            padding-bottom: 10px;
+            font-family: $primary_font;
+            font-size: 13px;
+        }
     }
 }
 
