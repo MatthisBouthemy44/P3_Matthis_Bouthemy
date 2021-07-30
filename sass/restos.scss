@@ -1,0 +1,75 @@
+@import "variables.scss" ;
+@import "mixin.scss";
+
+p{
+    font-family: $primary_font;
+    padding-left: 15px;
+    margin-top: 0px;
+}
+h3{
+    font-family: $primary_font;
+    border-bottom: 2px solid $third_color;
+    width: 40px;
+    padding-bottom: 5px;
+}
+h4{
+    font-family: $primary_font;
+    padding: 15px;
+    margin-bottom: 0px;
+}
+
+/*/ LOGO */
+
+.logo{
+    border-bottom: 1px solid $gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+    &__img{
+        width: 150px;
+    }
+}
+
+/*/ LOGO */
+
+.resto{
+    
+    &__img{
+        width: 100%;
+    }
+}
+
+/*/ MENU */
+
+.menu{
+    background-color: #F6F6F6;
+    border-radius: 20px 20px 0px 0px ;
+
+    &__titre{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    &__card{
+        background-color: white;
+        border-radius: 25px ;
+        box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+	            15px 15px 15px rgba(0,0,0,0.1);
+    }
+
+    .btn{
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        button{
+            border-radius: 40px;
+            border: none;
+            padding: 12px 25px ;
+            background: linear-gradient($secondadry_color , $primary_color);
+            background-color: $primary_color ;
+            color: #fff;
+        }
+    }
+}
