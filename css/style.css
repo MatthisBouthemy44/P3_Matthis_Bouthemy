@@ -7,21 +7,42 @@ body {
   max-width: 100%;
 }
 
+h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  text-align: start;
+  margin-left: 40px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
 /*/ LOGO */
 .logo {
   border-bottom: 1px solid #F6F6F6;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-.logo .location {
+.logo__img {
+  width: 200px;
+}
+
+.location {
   background-color: #EAEAEA;
   height: 50px;
 }
-.logo .location p {
+.location p {
   display: inline-flex;
-  font-family: "Roboto", sans-serif;
   color: #838383;
   font-size: 15px;
 }
-.logo .location i {
+.location i {
   margin-right: 15px;
 }
 
@@ -31,13 +52,10 @@ body {
   padding-top: 20px;
   padding-bottom: 25px;
 }
-.explorer h1 {
-  font-family: "Roboto", sans-serif;
-}
 .explorer__btn {
   border-radius: 40px;
   border: none;
-  padding: 10px 15px;
+  padding: 12px 15px;
   background: linear-gradient(#FF79DA, #9356DC);
   background-color: #9356DC;
   color: #fff;
@@ -73,19 +91,16 @@ body {
   color: #7c7979;
   margin-right: 15px;
 }
+.tips p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
 
 /*/ RESTAURANTS */
 aside {
   background-color: #F6F6F6;
   padding-top: 15px;
   padding-bottom: 15px;
-}
-aside h2 {
-  text-align: start;
-  margin-left: 40px;
-  margin-bottom: 5px;
-  margin-top: 15px;
-  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -106,7 +121,7 @@ aside h2 {
 .card__badge {
   padding: 5px 10px;
   background-color: #99E2D0;
-  color: #008E6D;
+  color: #009D82;
   border-radius: 3px;
   margin-left: 230px;
   margin-top: 10px;
@@ -129,33 +144,44 @@ aside h2 {
 }
 .card__body p {
   margin-top: -15px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   padding-bottom: 10px;
-  font-family: "Roboto", sans-serif;
   font-size: 13px;
 }
 
 /*/ FOOTER */
-footer {
+.footer {
   background-color: #353535;
   height: 150px;
 }
-footer ul {
+.footer__logo {
+  padding-top: 15px;
+}
+.footer ul {
   display: flex;
   justify-content: space-around;
   margin-top: 40px;
 }
-footer ul li {
+.footer ul li {
   list-style: none;
   color: #fff;
   font-family: "Roboto", sans-serif;
 }
-
-.logo__img {
-  width: 150px;
+.footer ul li i {
+  margin-right: 12px;
 }
-.logo__footer {
-  padding-top: 15px;
+
+@media only screen and (max-width: 767px) {
+  .footer ul {
+    display: block;
+    text-align: start;
+    margin-top: 5px;
+  }
+  .footer__logo {
+    text-align: start;
+    margin-left: 40px;
+    padding-top: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
