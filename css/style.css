@@ -118,7 +118,7 @@ aside {
   max-width: 325px;
   border-radius: 20px;
   height: 270px;
-  margin-right: 0px;
+  margin: 0 16px;
 }
 .card__img img {
   width: 325px;
