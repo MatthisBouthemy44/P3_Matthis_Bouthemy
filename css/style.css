@@ -14,13 +14,18 @@ h1 {
 h2 {
   text-align: start;
   margin-left: 40px;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   margin-top: 15px;
   font-family: "Roboto", sans-serif;
 }
 
 p {
   font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*/ LOGO */
@@ -119,6 +124,7 @@ aside {
   border-radius: 20px;
   height: 270px;
   margin: 0 16px;
+  cursor: pointer;
 }
 .card__img img {
   width: 325px;
@@ -167,6 +173,9 @@ aside {
 .footer__logo {
   padding-top: 15px;
 }
+.footer__logo svg {
+  width: 100px;
+}
 .footer ul {
   display: flex;
   justify-content: space-around;
@@ -188,12 +197,32 @@ aside {
   .container .card {
     max-width: 325px;
     margin-right: 40px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    max-width: 370px;
+  }
+  .container .card__img img {
+    width: 370px;
+  }
+  .container .card__badge {
+    margin-left: 270px;
+  }
+  .container .card__body i {
+    margin-left: 300px;
   }
 
+  .footer {
+    margin-left: -20px;
+    height: 200px;
+  }
   .footer ul {
     display: block;
     text-align: start;
     margin-top: 5px;
+  }
+  .footer ul li {
+    font-size: 15px;
+    margin-bottom: 8px;
   }
   .footer__logo {
     text-align: start;
