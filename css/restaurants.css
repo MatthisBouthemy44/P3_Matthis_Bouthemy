@@ -1,0 +1,122 @@
+p {
+  font-family: "Roboto", sans-serif;
+  padding-left: 15px;
+  margin-top: 0px;
+}
+
+h2 {
+  font-family: "Shrikhand", cursive;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  border-bottom: 2px solid #99E2D0;
+  width: 40px;
+  padding-bottom: 5px;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  padding: 15px;
+  margin-bottom: 0px;
+}
+
+/*/ LOGO */
+.logo {
+  border-bottom: 1px solid #F6F6F6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.logo__img {
+  width: 150px;
+}
+
+/*/ LOGO */
+.resto__img {
+  width: 100%;
+}
+
+/*/ MENU */
+.menu {
+  background-color: #F6F6F6;
+  border-radius: 20px 20px 0px 0px;
+}
+.menu__titre {
+  display: flex;
+  flex-direction: row;
+}
+.menu__card {
+  height: 80px;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.1);
+}
+.menu__card :nth-child(3) {
+  text-align: end;
+  margin-right: 20px;
+  margin-top: -35px;
+}
+.menu .btn {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.menu .btn button {
+  border-radius: 40px;
+  border: none;
+  padding: 12px 25px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-color: #9356DC;
+  color: #fff;
+}
+
+/*/ FOOTER */
+.footer {
+  background-color: #353535;
+  height: 150px;
+}
+.footer__logo {
+  padding-top: 15px;
+  text-align: center;
+}
+.footer__logo svg {
+  width: 100px;
+}
+.footer ul {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.footer ul li {
+  list-style: none;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+.footer ul li i {
+  margin-right: 12px;
+}
+
+/*/ @MEDIA */
+@media only screen and (max-width: 767px) {
+  .footer {
+    margin-left: -20px;
+    height: 200px;
+  }
+  .footer ul {
+    display: block;
+    text-align: start;
+    margin-top: 5px;
+  }
+  .footer ul li {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  .footer__logo {
+    text-align: inherit;
+    margin-left: 40px;
+    padding-top: 15px;
+  }
+}
+
+/*# sourceMappingURL=restaurants.css.map */
