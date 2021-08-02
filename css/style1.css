@@ -1,0 +1,64 @@
+p {
+  font-family: "Roboto", sans-serif;
+  padding-left: 15px;
+  margin-top: 0px;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  border-bottom: 2px solid #99E2D0;
+  width: 40px;
+  padding-bottom: 5px;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  padding: 15px;
+  margin-bottom: 0px;
+}
+
+/*/ LOGO */
+.logo {
+  border-bottom: 1px solid #F6F6F6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.logo__img {
+  width: 150px;
+}
+
+/*/ LOGO */
+.resto__img {
+  width: 100%;
+}
+
+/*/ MENU */
+.menu {
+  background-color: #F6F6F6;
+  border-radius: 20px 20px 0px 0px;
+}
+.menu__titre {
+  display: flex;
+  flex-direction: row;
+}
+.menu__card {
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.1);
+}
+.menu .btn {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.menu .btn button {
+  border-radius: 40px;
+  border: none;
+  padding: 12px 25px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-color: #9356DC;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style1.css.map */
