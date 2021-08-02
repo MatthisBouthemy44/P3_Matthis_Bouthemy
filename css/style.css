@@ -64,6 +64,7 @@ a {
   background: linear-gradient(#FF79DA, #9356DC);
   background-color: #9356DC;
   color: #fff;
+  cursor: pointer;
 }
 
 /*/ FONCTIONNEMENT */
