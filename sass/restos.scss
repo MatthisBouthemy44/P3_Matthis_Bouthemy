@@ -36,6 +36,14 @@ h4{
 
 /*/ LOGO */
 
+.fleche{
+    position: absolute;
+    font-size: 20px;
+    margin-left: 35px;
+    margin-top: 13px;
+    color: black;
+}
+
 .resto{
     
     &__img{
@@ -60,6 +68,11 @@ h4{
         border-radius: 25px ;
         box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
 	            15px 15px 15px rgba(0,0,0,0.1);
+
+        :nth-child(2){
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }             
 
         :nth-child(3){
             text-align: end;
