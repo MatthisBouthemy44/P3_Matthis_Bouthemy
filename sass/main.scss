@@ -80,12 +80,14 @@ a{
 
 .tips{
     background-color: $gray;
+    padding-top: 15px;
     cursor: pointer;
     border: 1px solid $gray;
     border-radius: 25px;
     font-family: $primary_font;
     box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
 	            15px 15px 15px rgba(0,0,0,0.1);
+                
 
     .badge{
         border-radius: 50%;
@@ -94,8 +96,9 @@ a{
         color: #fff;
         margin-right: auto;
         display: table;
-        margin-left: -0.9%;
+        margin-left: -0.8%;
         font-size: 15px;
+        position: absolute;
      }            
 
     .tel{
@@ -224,6 +227,14 @@ aside {
     }
 }
 @media only screen and (max-width: 767px){
+
+    /*/ FONCTIONNEMENT */
+
+    .tips{
+        .badge{
+        margin-left: -2%;
+        }
+    }
 
     .container{
         display: inline-block;

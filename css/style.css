@@ -70,6 +70,7 @@ a {
 /*/ FONCTIONNEMENT */
 .tips {
   background-color: #F6F6F6;
+  padding-top: 15px;
   cursor: pointer;
   border: 1px solid #F6F6F6;
   border-radius: 25px;
@@ -83,8 +84,9 @@ a {
   color: #fff;
   margin-right: auto;
   display: table;
-  margin-left: -0.9%;
+  margin-left: -0.8%;
   font-size: 15px;
+  position: absolute;
 }
 .tips .tel {
   color: #7c7979;
@@ -192,6 +194,11 @@ aside {
 }
 
 @media only screen and (max-width: 767px) {
+  /*/ FONCTIONNEMENT */
+  .tips .badge {
+    margin-left: -2%;
+  }
+
   .container {
     display: inline-block;
   }

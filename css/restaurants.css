@@ -1,11 +1,17 @@
+body {
+  margin: 0;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   padding-left: 15px;
   margin-top: 0px;
+  font-weight: 100;
 }
 
 h2 {
   font-family: "Shrikhand", cursive;
+  font-size: 30px;
 }
 
 h3 {
@@ -13,32 +19,39 @@ h3 {
   border-bottom: 2px solid #99E2D0;
   width: 40px;
   padding-bottom: 5px;
+  font-weight: 100;
 }
 
 h4 {
   font-family: "Roboto", sans-serif;
   padding: 15px;
   margin-bottom: 0px;
+  font-weight: 500;
 }
 
 /*/ LOGO */
 .logo {
+  display: flex;
+  justify-content: space-around;
   border-bottom: 1px solid #F6F6F6;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 3;
 }
 .logo__img {
-  width: 150px;
+  width: 180px;
 }
 
 /*/ LOGO */
 .fleche {
   position: absolute;
   font-size: 20px;
-  margin-left: 35px;
-  margin-top: 13px;
   color: black;
+  margin-top: 5px;
 }
 
 .resto__img {
@@ -49,13 +62,22 @@ h4 {
 .menu {
   background-color: #F6F6F6;
   border-radius: 20px 20px 0px 0px;
+  position: relative;
+  margin-top: -50px;
+  padding-left: 15px;
 }
 .menu__titre {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+}
+.menu__titre i {
+  margin-top: 35px;
+  margin-right: 40px;
+  font-size: 25px;
 }
 .menu__card {
   height: 80px;
+  margin: 10px 15px;
   background-color: white;
   border-radius: 25px;
   box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.1);
@@ -68,6 +90,7 @@ h4 {
   text-align: end;
   margin-right: 20px;
   margin-top: -35px;
+  font-weight: 500;
 }
 .menu .btn {
   text-align: center;
