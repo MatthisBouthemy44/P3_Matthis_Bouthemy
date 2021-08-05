@@ -22,6 +22,7 @@ h2 {
 }
 p{
     font-family: $primary_font;
+    font-weight: 100;
 }
 a{
     text-decoration: none;
@@ -86,8 +87,11 @@ a{
     border-radius: 25px;
     font-family: $primary_font;
     box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
-	            15px 15px 15px rgba(0,0,0,0.1);
-                
+	            15px 15px 15px rgba(0,0,0,0.1);            
+    
+    p{
+        font-weight: 500
+    }
 
     .badge{
         border-radius: 50%;
