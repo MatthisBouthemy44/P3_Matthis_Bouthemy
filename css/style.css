@@ -1,6 +1,7 @@
 body {
   text-align: center;
   width: 100%;
+  margin: 0;
 }
 
 .content {
@@ -13,7 +14,7 @@ h1 {
 
 h2 {
   text-align: start;
-  margin-left: 40px;
+  margin-left: 20px;
   margin-bottom: 20px;
   margin-top: 15px;
   font-family: "Roboto", sans-serif;
@@ -80,6 +81,7 @@ a {
 }
 .tips p {
   font-weight: 500;
+  margin-right: 15px;
 }
 .tips .badge {
   border-radius: 50%;
