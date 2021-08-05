@@ -54,6 +54,9 @@ h4 {
   margin-top: 5px;
 }
 
+.resto {
+  margin: 0;
+}
 .resto__img {
   width: 100%;
 }
