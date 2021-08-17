@@ -70,7 +70,7 @@ a{
         border-radius: 40px;
         border: none;
         padding: 12px 15px ;
-        background: linear-gradient($secondadry_color , $primary_color);
+        background: linear-gradient($secondary_color , $primary_color);
         background-color: $primary_color ;
         color: #fff;
         cursor: pointer;
@@ -185,7 +185,7 @@ aside {
             font-size: 22px;
         }
         i:hover{
-            background: linear-gradient($secondadry_color , $primary_color);
+            background: linear-gradient($secondary_color , $primary_color);
         }
 
         p{

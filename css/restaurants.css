@@ -79,28 +79,63 @@ h4 {
   font-size: 25px;
 }
 .menu__card {
+  display: flex;
+  cursor: pointer;
   height: 80px;
   margin: 10px 15px;
+  justify-content: space-between;
   background-color: white;
   border-radius: 25px;
   box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.1);
+  /*FADE-IN-UP ANIMATION*/
+  /*animation-name: fadeInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;*/
+  /*CHECK ANIMATION*/
+  /*transition: transform 1.5 ease-in-out .5s forwards;
+
+  &:hover{
+      transform: scaleX(0.94);
+  }*/
+}
+.menu__card :nth-child(1) {
+  margin-top: 0;
 }
 .menu__card :nth-child(2) {
-  text-overflow: ellipsis;
-  overflow: hidden;
+  display: flex;
+  flex-direction: row;
 }
-.menu__card :nth-child(3) {
-  text-align: end;
-  margin-right: 20px;
-  margin-top: -35px;
-  font-weight: 500;
+.menu__card :nth-child(2) p {
+  margin-top: 30px;
+  padding-right: 10px;
 }
-.menu .btn {
+.menu__card .checked {
+  width: 90px;
+  height: 80px;
+  cursor: pointer;
+  border-radius: 0 25px 25px 0;
+  background-color: #99E2D0;
+  /*CHECK ANIMATION*/
+  /*position: absolute;
+  z-index: -1;*/
+  /*CHECK ANIMATION*/
+  /*animation: slideInRight 1.5s 1.5s  ;*/
+  /* transition:  all .5s forwards ;
+
+  &:hover{
+      width: 90px;
+      background-color: $third_color;
+  }*/
+}
+
+.btn {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.menu .btn button {
+.btn button {
   border-radius: 40px;
   border: none;
   padding: 12px 25px;
@@ -109,6 +144,27 @@ h4 {
   color: #fff;
 }
 
+/*CHECK ANIMATION*/
+/*@keyframes slideInRight {
+    0% {
+    transform: translateX(100%);
+    visibility: visible;
+    }
+    100% {
+    transform: translateX(0);
+    }
+}*/
+/*FADE-IN-UP ANIMATION*/
+/*@keyframes fadeInUp {
+    0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+    }
+    100% {
+    opacity: 1;
+    transform: none;
+    }
+    }*/
 /*/ FOOTER */
 .footer {
   background-color: #353535;
