@@ -1,5 +1,6 @@
 @import "variables.scss" ;
 @import "mixin.scss";
+@import "animation.scss";
 body{
     margin: 0;
 }
@@ -27,7 +28,12 @@ h4{
     margin-bottom: 0px;
     font-weight: 500;
 }
-
+.loader{
+    @include loader;
+    &__spinner{
+        @include spinner;
+    }
+}
 /*/ LOGO */
 
 .logo{
@@ -86,6 +92,8 @@ h4{
     
     &__card{
         display: flex;
+        position: relative;
+        flex-flow: row nowrap;
         cursor: pointer;
         height: 80px;
         margin: 10px 15px;
@@ -94,43 +102,54 @@ h4{
         border-radius: 25px ;
         box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
 	            15px 15px 15px rgba(0,0,0,0.1);
-
-                /*FADE-IN-UP ANIMATION*/ 
-        /*animation-name: fadeInUp;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;*/
-
-                /*CHECK ANIMATION*/
-        /*transition: transform 1.5 ease-in-out .5s forwards;
-
-        &:hover{
-            transform: scaleX(0.94);
-        }*/
-
-        
-
-        
+        }         
         :nth-child(1){
             margin-top: 0;
+
+            p{
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
         }
 
         :nth-child(2){
-            display: flex;
-            flex-direction: row;
 
-            p{
-                margin-top: 30px;
-                padding-right: 10px;
+         & .menu--price{
+            position: absolute;
+            right: 15px;
+            & p {
+                font-weight: 500;
+                margin: 30px 20px 0 0 ;
             }
         }
-        .checked{
+        
+        &:hover{
+            .menu--price{
+                right: 75px;
+                transition: 0.4s;
+            }
+            .green-box{
+                background-color: $third_color;
+                border-radius: 0 20px 20px 0;
+                width: 70px;
+            }
+    }
+
+
+
+
+
+
+
+
+        /*.checked{
             width: 90px;
             height: 80px;
             cursor: pointer;
             border-radius: 0 25px 25px 0 ;
-            background-color: $third_color;
+            background-color: $third_color;*/
+
                 /*CHECK ANIMATION*/
             /*position: absolute;
             z-index: -1;*/
@@ -146,7 +165,7 @@ h4{
             }*/
         }        
     }
-    }
+    
 
     .btn{
         text-align: center;

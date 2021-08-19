@@ -1,6 +1,7 @@
 
 @import "variables.scss" ;
 @import "mixin.scss";
+@import "animation.scss";
 
 body{
     text-align: center;
@@ -29,6 +30,16 @@ a{
     text-decoration: none;
     color: inherit;
 }
+/*/ LOADER */
+
+.loader{
+    @include loader;
+    &__spinner{
+        @include spinner;
+    }
+}
+
+
 /*/ LOGO */
 
 .logo{
