@@ -25,7 +25,7 @@ h3{
 h4{
     font-family: $primary_font;
     padding: 15px;
-    margin-bottom: 0px;
+    margin: 0;
     font-weight: 500;
 }
 .loader{
@@ -92,8 +92,6 @@ h4{
     
     &__card{
         display: flex;
-        position: relative;
-        flex-flow: row nowrap;
         cursor: pointer;
         height: 80px;
         margin: 10px 15px;
@@ -102,70 +100,47 @@ h4{
         border-radius: 25px ;
         box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
 	            15px 15px 15px rgba(0,0,0,0.1);
-        }         
-        :nth-child(1){
-            margin-top: 0;
-
-            p{
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                overflow: hidden;
-            }
-        }
+         
 
         :nth-child(2){
-
-         & .menu--price{
-            position: absolute;
-            right: 15px;
             & p {
+                position: absolute;
+                right: 15px;
                 font-weight: 500;
                 margin: 30px 20px 0 0 ;
             }
         }
-        
-        &:hover{
-            .menu--price{
-                right: 75px;
-                transition: 0.4s;
+        :nth-child(3){
+                visibility: hidden;
+    }
+
+        &:active{
+            :nth-child(2){
+                & p{
+                    right: 75px;
+                    transition: 0.2s;
+                }
+               
             }
             .green-box{
+                visibility: visible;
                 background-color: $third_color;
                 border-radius: 0 20px 20px 0;
                 width: 70px;
+
             }
-    }
+            .fa-check-circle{
+                visibility: visible;
+                color: white;
+                font-size: 20px;
+                margin-top: 31px;
+                margin-left: 25px;
+                animation: coche .5s ease-in forwards ;
+            
+        }
+    }        
+}
 
-
-
-
-
-
-
-
-        /*.checked{
-            width: 90px;
-            height: 80px;
-            cursor: pointer;
-            border-radius: 0 25px 25px 0 ;
-            background-color: $third_color;*/
-
-                /*CHECK ANIMATION*/
-            /*position: absolute;
-            z-index: -1;*/
-
-                 /*CHECK ANIMATION*/
-            /*animation: slideInRight 1.5s 1.5s  ;*/
-           
-            /* transition:  all .5s forwards ;
-
-            &:hover{
-                width: 90px;
-                background-color: $third_color;
-            }*/
-        }        
-    }
-    
 
     .btn{
         text-align: center;
@@ -181,29 +156,7 @@ h4{
             color: #fff;
         }
     }
-            /*CHECK ANIMATION*/
-
-    /*@keyframes slideInRight {
-        0% {
-        transform: translateX(100%);
-        visibility: visible;
-        }
-        100% {
-        transform: translateX(0);
-        }
-    }*/
-        /*FADE-IN-UP ANIMATION*/
-
-    /*@keyframes fadeInUp {
-        0% {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-        }
-        100% {
-        opacity: 1;
-        transform: none;
-        }
-        }*/
+}
 
 /*/ FOOTER */
 

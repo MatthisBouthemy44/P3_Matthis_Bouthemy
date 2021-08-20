@@ -48,3 +48,13 @@
         opacity: 1;
     }
 }
+
+@keyframes coche{
+    0%{
+      transform: rotate(0turn);
+    }
+    100%{
+      transform: rotate(1turn);
+      opacity: 1;
+    }
+  }

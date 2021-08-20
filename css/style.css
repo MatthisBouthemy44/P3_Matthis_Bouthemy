@@ -45,6 +45,15 @@
     opacity: 1;
   }
 }
+@keyframes coche {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+    opacity: 1;
+  }
+}
 body {
   text-align: center;
   width: 100%;
@@ -97,7 +106,7 @@ a {
   border-bottom: 15px solid #ff79da;
   border-left: 15px solid #99e2d0;
   border-right: 15px solid #99e2d0;
-  animation: loader__spinner 0.7s linear 0.2s forwards;
+  animation: loader__spinner 1s linear 0.2s forwards;
 }
 
 /*/ LOGO */
