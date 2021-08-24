@@ -79,6 +79,16 @@ h4{
     margin-top: -50px;
     padding-left: 15px;
 
+    &__entree{
+        @include appear;
+    }
+    &__plats{
+        @include appear;
+    }
+    &__desserts{
+        @include appear;
+    }
+
     &__titre{
         display: flex;
         justify-content: space-between;
@@ -92,6 +102,7 @@ h4{
     
     &__card{
         display: flex;
+        position: relative;
         cursor: pointer;
         height: 80px;
         margin: 10px 15px;
@@ -100,27 +111,32 @@ h4{
         border-radius: 25px ;
         box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
 	            15px 15px 15px rgba(0,0,0,0.1);
-         
-
-        :nth-child(2){
+        
+        .menu__price{
+            position: absolute;
+            right: 15px;
             & p {
-                position: absolute;
-                right: 15px;
                 font-weight: 500;
                 margin: 30px 20px 0 0 ;
             }
         }
-        :nth-child(3){
+        .green-box{
                 visibility: hidden;
-    }
+        }
 
-        &:active{
-            :nth-child(2){
-                & p{
-                    right: 75px;
-                    transition: 0.2s;
+        &:hover{
+            .menu__content{
+                white-space: nowrap;
+                overflow: hidden;
+                padding-right: 50px;
+                p, h4{
+                    text-overflow: ellipsis;
+                    overflow: hidden;
                 }
-               
+            }
+            .menu__price{
+                right: 55px;
+                transition: 0.2s;
             }
             .green-box{
                 visibility: visible;

@@ -3,14 +3,8 @@
   0% {
     opacity: 1;
   }
-  25% {
-    opacity: 0.8;
-  }
   50% {
     opacity: 0.5;
-  }
-  75% {
-    opacity: 0.2;
   }
   100% {
     opacity: 0;
@@ -26,9 +20,6 @@
   50% {
     opacity: 0.5;
     -webkit-transform: rotate(180deg) scale(1.2);
-  }
-  75% {
-    opacity: 0.1;
   }
   100% {
     opacity: 0;
@@ -51,6 +42,16 @@
   }
   100% {
     transform: rotate(1turn);
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
     opacity: 1;
   }
 }
@@ -147,6 +148,33 @@ h4 {
   margin-top: -50px;
   padding-left: 15px;
 }
+.menu__entree :nth-of-type(1) {
+  animation: appear 1s 0.8s linear backwards;
+}
+.menu__entree :nth-of-type(2) {
+  animation: appear 1s 1s linear backwards;
+}
+.menu__entree :nth-of-type(3) {
+  animation: appear 1s 1.2s linear backwards;
+}
+.menu__plats :nth-of-type(1) {
+  animation: appear 1s 0.8s linear backwards;
+}
+.menu__plats :nth-of-type(2) {
+  animation: appear 1s 1s linear backwards;
+}
+.menu__plats :nth-of-type(3) {
+  animation: appear 1s 1.2s linear backwards;
+}
+.menu__desserts :nth-of-type(1) {
+  animation: appear 1s 0.8s linear backwards;
+}
+.menu__desserts :nth-of-type(2) {
+  animation: appear 1s 1s linear backwards;
+}
+.menu__desserts :nth-of-type(3) {
+  animation: appear 1s 1.2s linear backwards;
+}
 .menu__titre {
   display: flex;
   justify-content: space-between;
@@ -158,6 +186,7 @@ h4 {
 }
 .menu__card {
   display: flex;
+  position: relative;
   cursor: pointer;
   height: 80px;
   margin: 10px 15px;
@@ -166,26 +195,37 @@ h4 {
   border-radius: 25px;
   box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.1);
 }
-.menu__card :nth-child(2) p {
+.menu__card .menu__price {
   position: absolute;
   right: 15px;
+}
+.menu__card .menu__price p {
   font-weight: 500;
   margin: 30px 20px 0 0;
 }
-.menu__card :nth-child(3) {
+.menu__card .green-box {
   visibility: hidden;
 }
-.menu__card:active :nth-child(2) p {
-  right: 75px;
+.menu__card:hover .menu__content {
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 50px;
+}
+.menu__card:hover .menu__content p, .menu__card:hover .menu__content h4 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu__card:hover .menu__price {
+  right: 55px;
   transition: 0.2s;
 }
-.menu__card:active .green-box {
+.menu__card:hover .green-box {
   visibility: visible;
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
   width: 70px;
 }
-.menu__card:active .fa-check-circle {
+.menu__card:hover .fa-check-circle {
   visibility: visible;
   color: white;
   font-size: 20px;

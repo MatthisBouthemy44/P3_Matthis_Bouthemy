@@ -3,14 +3,8 @@
   0% {
     opacity: 1;
   }
-  25% {
-    opacity: 0.8;
-  }
   50% {
     opacity: 0.5;
-  }
-  75% {
-    opacity: 0.2;
   }
   100% {
     opacity: 0;
@@ -26,9 +20,6 @@
   50% {
     opacity: 0.5;
     -webkit-transform: rotate(180deg) scale(1.2);
-  }
-  75% {
-    opacity: 0.1;
   }
   100% {
     opacity: 0;
@@ -51,6 +42,16 @@
   }
   100% {
     transform: rotate(1turn);
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
     opacity: 1;
   }
 }
