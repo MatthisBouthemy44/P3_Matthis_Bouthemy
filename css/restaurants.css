@@ -201,7 +201,7 @@ h4 {
 }
 .menu__card .menu__price p {
   font-weight: 500;
-  margin: 30px 20px 0 0;
+  margin: 50px 15px 0 0;
 }
 .menu__card .green-box {
   visibility: hidden;
@@ -216,7 +216,7 @@ h4 {
   overflow: hidden;
 }
 .menu__card:hover .menu__price {
-  right: 55px;
+  right: 65px;
   transition: 0.2s;
 }
 .menu__card:hover .green-box {
