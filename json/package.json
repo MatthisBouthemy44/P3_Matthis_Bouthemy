@@ -1,0 +1,23 @@
+{
+  "name": "p3_matthis_bouthemy",
+  "version": "1.0.0",
+  "description": "P3-Matthis-Bouthemy",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.35.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass/main.scss:./css/style.css sass/restos.scss:./css/restaurants.css sass/contact.scss:./css/contact.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthisBouthemy44/P3_Matthis_Bouthemy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatthisBouthemy44/P3_Matthis_Bouthemy/issues"
+  },
+  "homepage": "https://github.com/MatthisBouthemy44/P3_Matthis_Bouthemy#readme"
+}
