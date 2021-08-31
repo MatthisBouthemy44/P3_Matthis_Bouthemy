@@ -1,3 +1,4 @@
+/* FOOTER*/
 /* LOADER */
 @keyframes loader {
   0% {
@@ -147,14 +148,19 @@ a {
   background-color: #9356DC;
   color: #fff;
   cursor: pointer;
+  transform: scale(0.98);
+}
+.explorer__btn:hover {
+  transform: scale(1);
 }
 
 /*/ FONCTIONNEMENT */
 .tips {
   background-color: #F6F6F6;
-  padding-top: 15px;
+  transform: scale(0.98);
+  padding-top: 20px;
+  height: 45px;
   cursor: pointer;
-  border: 1px solid #F6F6F6;
   border-radius: 25px;
   font-family: "Roboto", sans-serif;
   box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.1);
@@ -194,6 +200,7 @@ a {
 
 .tips:hover {
   background-color: #F5EDFE;
+  transform: scale(1);
 }
 
 /*/ RESTAURANTS */
@@ -214,6 +221,7 @@ aside {
   height: 270px;
   margin: 0 16px;
   cursor: pointer;
+  transform: scale(0.98);
 }
 .card__img img {
   width: 325px;
@@ -243,8 +251,9 @@ aside {
 .card__body i {
   margin-left: 270px;
   font-size: 22px;
+  background-color: white;
 }
-.card__body i:hover {
+.card__body .fas:hover {
   background: linear-gradient(#FF79DA, #9356DC);
 }
 .card__body p {
@@ -252,6 +261,9 @@ aside {
   margin-bottom: 0;
   padding-bottom: 10px;
   font-size: 13px;
+}
+.card:hover {
+  transform: scale(1);
 }
 
 /*/ FOOTER */
@@ -261,9 +273,11 @@ aside {
 }
 .footer__logo {
   padding-top: 15px;
+  text-align: center;
 }
 .footer__logo svg {
   width: 100px;
+  cursor: pointer;
 }
 .footer ul {
   display: flex;
@@ -274,11 +288,16 @@ aside {
   list-style: none;
   color: #fff;
   font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+.footer ul li:hover {
+  text-decoration: underline;
 }
 .footer ul li i {
   margin-right: 12px;
 }
 
+/*/ @MEDIA */
 @media only screen and (max-width: 767px) {
   /*/ FONCTIONNEMENT */
   .tips .badge {

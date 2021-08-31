@@ -11,6 +11,45 @@
         font-family: "Roboto", sans-serif; 
 }
 
+/* FOOTER*/
+
+@mixin footer {
+        background-color: $dark_gray;
+        height: 150px;
+
+        &__logo{
+                padding-top: 15px;
+                text-align: center;
+
+                svg{
+                width: 100px;
+                cursor: pointer;
+                }
+    }
+
+        ul{
+                display: flex;
+                justify-content: space-around;
+                margin-top: 40px;
+
+        li{
+            list-style: none;
+            color: $white;
+            font-family: $primary_font;
+            cursor: pointer;
+
+            &:hover{
+                text-decoration: underline;
+            }
+
+            i{
+                margin-right: 12px;
+            }
+        }
+        
+    }
+}
+
 /* LOADER */
 
  @mixin loader {
@@ -48,3 +87,4 @@
                 animation: appear 1s 1.2s linear backwards;
               }
 }
+
