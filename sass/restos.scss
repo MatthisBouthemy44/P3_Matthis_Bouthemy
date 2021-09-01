@@ -105,7 +105,7 @@ h4{
       &:hover{
         .coeur {
             display: block;
-            color: mix($secondary_color , $primary_color);
+            color: mix( $primary_color, $secondary_color );
             opacity: 1;
             transition: 1s ease-in-out;
         }
@@ -122,8 +122,7 @@ h4{
         justify-content: space-between;
         background-color: white;
         border-radius: 25px ;
-        box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
-	            15px 15px 15px rgba(0,0,0,0.1);
+        box-shadow:5px 5px 5px rgba(0,0,0,0.1);     
         
         .menu__price{
             position: absolute;

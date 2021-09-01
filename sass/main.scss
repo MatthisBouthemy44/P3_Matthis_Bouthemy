@@ -270,7 +270,6 @@ aside {
             margin-top: 15px;
             margin-bottom: 25px;
             max-width: 370px;
-            margin-left: 3px;
 
             &__img{
                 
@@ -310,4 +309,9 @@ aside {
             padding-top: 15px;
         }
 }
+}
+@media only screen and (max-width: 667px){
+    .card{
+        margin-left: 3px;
+    }
 }
