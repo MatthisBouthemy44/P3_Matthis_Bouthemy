@@ -92,6 +92,23 @@ h4{
             margin-right: 40px;
             font-size: 25px;
         }
+        .fa-heart {
+            position: absolute;
+            right: 10px;
+            cursor: pointer;
+        }
+        .coeur{
+            opacity: 0;
+            
+      }
+    }
+    &:hover{
+        .coeur {
+            display: block;
+            color: $primary_color;
+            opacity: 1;
+            transition: 1s ease-in-out;
+        }
     }
     
     &__card{

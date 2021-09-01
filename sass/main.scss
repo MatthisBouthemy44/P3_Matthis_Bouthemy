@@ -158,6 +158,7 @@ aside {
 
 .container{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .card{
@@ -192,6 +193,7 @@ aside {
     &__body{
         text-align: start;
         margin-left: 10px;
+        position: relative;
 
         h3{
             margin: 10px 0px -5px 0px;
@@ -204,12 +206,17 @@ aside {
             font-size: 22px;
             background-color: white;
         }
-        .fas:hover{
-            background: linear-gradient($secondary_color , $primary_color);
+        .fa-heart {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+        .fas{
+            opacity: 0;
         }
 
         p{
-            margin-top: -15px;
+            // margin-top: -15px;
             margin-bottom: 0;
             padding-bottom: 10px;
             font-size: 13px;
@@ -217,6 +224,14 @@ aside {
     }
     &:hover{
         transform: scale(1);
+        
+        .fas {
+            display: block;
+            color: $primary_color;
+            opacity: 1;
+            transition: 1s ease-in-out;
+        }
+
     }
 }
 

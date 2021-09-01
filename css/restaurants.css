@@ -163,6 +163,20 @@ h4 {
   margin-right: 40px;
   font-size: 25px;
 }
+.menu__titre .fa-heart {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+.menu__titre .coeur {
+  opacity: 0;
+}
+.menu:hover .coeur {
+  display: block;
+  color: #9356DC;
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
 .menu__card {
   display: flex;
   position: relative;
