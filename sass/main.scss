@@ -229,7 +229,7 @@ aside {
         &:hover{
             .fas {
                 display: block;
-                color: linear-gradient($secondary_color , $primary_color);
+                color: mix($secondary_color , $primary_color);
                 opacity: 1;
                 transition: 1s ease-in-out;
             }
