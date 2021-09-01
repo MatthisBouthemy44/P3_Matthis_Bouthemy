@@ -221,17 +221,18 @@ aside {
             padding-bottom: 10px;
             font-size: 13px;
         }
+        &:hover{
+            .fas {
+                display: block;
+                color: $primary_color;
+                opacity: 1;
+                transition: 1s ease-in-out;
+            }
+    
+        }
     }
     &:hover{
         transform: scale(1);
-        
-        .fas {
-            display: block;
-            color: $primary_color;
-            opacity: 1;
-            transition: 1s ease-in-out;
-        }
-
     }
 }
 

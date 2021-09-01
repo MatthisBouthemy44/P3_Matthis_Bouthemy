@@ -86,6 +86,7 @@ h4{
     &__titre{
         display: flex;
         justify-content: space-between;
+        cursor: pointer;
 
         i{
             margin-top: 35px;
@@ -101,15 +102,16 @@ h4{
             opacity: 0;
             
       }
-    }
-    &:hover{
+      &:hover{
         .coeur {
             display: block;
             color: $primary_color;
             opacity: 1;
             transition: 1s ease-in-out;
         }
+      }
     }
+    
     
     &__card{
         display: flex;

@@ -27,16 +27,6 @@
     -webkit-transform: rotate(360deg) scale(2);
   }
 }
-@keyframes choice {
-  from {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
 @keyframes coche {
   0% {
     transform: rotate(0turn);
@@ -157,6 +147,7 @@ h4 {
 .menu__titre {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 .menu__titre i {
   margin-top: 35px;
@@ -171,7 +162,7 @@ h4 {
 .menu__titre .coeur {
   opacity: 0;
 }
-.menu:hover .coeur {
+.menu__titre:hover .coeur {
   display: block;
   color: #9356DC;
   opacity: 1;
