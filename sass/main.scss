@@ -315,12 +315,13 @@ aside {
         }
 }
 }
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 768px){
     .container{
         width: 100%;
     }
     a{
         width: 100%;
+        margin-bottom: 20px;
     }
 
     .card{
@@ -332,10 +333,18 @@ aside {
                 max-height: 325px;
             }
         }
+        &__badge{
+            right: 10px;
+        }
     }
     .footer{
         ul{
             padding: 0;
         }
+    }
+}
+@media only screen and (min-width: 768px){
+    .card{
+        max-width: 95%;
     }
 }
